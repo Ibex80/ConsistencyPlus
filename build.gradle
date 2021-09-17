@@ -1,19 +1,19 @@
 plugins {
-    id "fabric-loom" version "0.9.+"
+    id "fabric-loom" version "0.10.+"
     id "io.github.juuxel.loom-quiltflower" version "1.+"
 }
 
 String mod_version = "0.4.1-rc.1"
 
-String minecraft_version = "1.17.1"
-String mc_major_version = "1.17"
-String yarn_mappings  = "46"     // https://fabricmc.net/versions.html
-String loader_version = "0.11.6" // https://fabricmc.net/versions.html
-String fabric_version = "0.39.2" // https://fabricmc.net/versions.html
+String minecraft_version = "21w37a"
+String mc_major_version = "1.18_experimental"
+String yarn_mappings  = "5"      // https://fabricmc.net/versions.html
+String loader_version = "0.11.7" // https://fabricmc.net/versions.html
+String fabric_version = "0.40.1" // https://fabricmc.net/versions.html
 String srt_version    = "1.0.4"  // https://modrinth.com/mod/stonecutter_recipe_tags/versions
 
 archivesBaseName = "consistency_plus"
-version = mod_version + "+" + mc_major_version
+version = mod_version + "+" + minecraft_version
 
 repositories {
     maven {url = "https://api.modrinth.com/maven"}
